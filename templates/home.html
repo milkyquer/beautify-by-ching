@@ -1,0 +1,132 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautify by Ching | Hair and Make Up Artistry</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="#" class="brand">Beautify <span>by Ching.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="nav-book">Book an Appointment</a>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <div class="hero-content reveal">
+        <p class="eyebrow">HAIR AND MAKE UP ARTISTRY</p>
+        <h1>Your beauty,<br><em>beautifully</em> expressed.</h1>
+        <p class="hero-description">Every face tells a story. Let us make yours unforgettable with beauty looks made just for you.</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Book Your Glam</a>
+            <a href="#services" class="btn-text">Explore Services ↗</a>
+        </div>
+        <div class="hero-note">BEAUTY THAT FEELS LIKE YOU.</div>
+    </div>
+    <div class="hero-visual reveal">
+        <div class="hero-frame">
+            <div class="hero-placeholder">
+                <svg viewBox="0 0 100 100" fill="none">
+                    <path d="M50 12C39 12 32 23 32 38c0 9-7 14-7 25 0 17 11 26 25 26s25-9 25-26c0-11-7-16-7-25C68 23 61 12 50 12Z" stroke="currentColor" stroke-width="1.2"/>
+                    <path d="M39 45c3-3 7-3 10 0m2 0c3-3 7-3 10 0M43 62c5 4 9 4 14 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M15 15c8 2 12 6 14 14M85 15c-8 2-12 6-14 14" stroke="currentColor" stroke-width="1"/>
+                </svg>
+                <span>YOUR BEAUTY MOMENT</span>
+            </div>
+        </div>
+        <div class="floating-note">A little glam,<br>a lot of confidence.</div>
+    </div>
+</header>
+
+<section class="intro reveal" id="about">
+    <p class="eyebrow">WELCOME TO BEAUTIFY BY CHING</p>
+    <h2>Because every occasion<br>deserves a <em>beautiful you.</em></h2>
+    <p>From simple elegance to full-on glam, we're here to help you feel confident, radiant, and beautifully yourself.</p>
+</section>
+
+<section class="services section" id="services">
+    <div class="section-heading reveal">
+        <p class="eyebrow">WHAT WE OFFER</p>
+        <h2>Our Beauty <em>Services</em></h2>
+        <p>Beauty services for your most memorable moments.</p>
+    </div>
+    <div class="service-grid">
+        <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M24 7c-7 0-12 7-12 15 0 10 5 19 12 19s12-9 12-19C36 14 31 7 24 7Z"/><path d="M17 22c4-4 10-4 14 0M19 29c3 2 7 2 10 0"/></svg>
+            </div>
+            <h3>Bridal Make-Up</h3>
+            <p>Timeless beauty for your once-in-a-lifetime moments.</p>
+        </article>
+        <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M24 8c-9 0-15 7-15 16s6 16 15 16 15-7 15-16S33 8 24 8Z"/><path d="M17 20c4-3 10-3 14 0M19 29c3 3 7 3 10 0"/></svg>
+            </div>
+            <h3>Special Occasions</h3>
+            <p>Look and feel your best for every celebration.</p>
+        </article>
+        <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 39c0-15 3-27 12-31 9 4 12 16 12 31M16 27c5-3 11-3 16 0M19 35c3-2 7-2 10 0"/></svg>
+            </div>
+            <h3>Hair Styling</h3>
+            <p>Beautiful hairstyles to complete your whole look.</p>
+        </article>
+        <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <div class="service-icon">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3"><path d="m12 35 22-22 5 5-22 22-7 2 2-7Z"/><path d="m29 18 5 5M10 12h12M10 18h7"/></svg>
+            </div>
+            <h3>Make-Up Lessons</h3>
+            <p>Learn techniques that bring out your natural beauty.</p>
+        </article>
+    </div>
+    <p class="starting-rate">Beauty services starting at <strong>₱1,500</strong> per person/style.</p>
+</section>
+
+<section class="portfolio section" id="portfolio">
+    <div class="section-heading reveal">
+        <p class="eyebrow">A TOUCH OF BEAUTY</p>
+        <h2>Our <em>Portfolio</em></h2>
+        <p>A glimpse of the looks we love creating.</p>
+    </div>
+    <div class="portfolio-grid reveal">
+        <div class="portfolio-item portfolio-one"><span>BRIDAL GLAM</span></div>
+        <div class="portfolio-item portfolio-two"><span>SOFT ELEGANCE</span></div>
+        <div class="portfolio-item portfolio-three"><span>BEAUTY DETAILS</span></div>
+    </div>
+    <p class="portfolio-hint">Your actual client photos can be added here anytime.</p>
+</section>
+
+<section class="contact reveal" id="contact">
+    <p class="eyebrow">LET'S CREATE YOUR LOOK</p>
+    <h2>Ready for your<br><em>beauty moment?</em></h2>
+    <p>Send us a message and let's talk about your next glam session.</p>
+    <a href="https://m.me/chingnicole20" target="_blank" rel="noopener" class="btn-primary">Book via Messenger ↗</a>
+    <small>Free transportation within South Caloocan. Location-based fees apply elsewhere.</small>
+</section>
+
+<footer>
+    <a href="#home" class="brand">Beautify <span>by Ching.</span></a>
+    <p>Hair and Make Up Artistry</p>
+    <p class="copyright">© 2026 Beautify by Ching. All rights reserved.</p>
+</footer>
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
